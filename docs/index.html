@@ -228,7 +228,7 @@
                 Finally, we have to change the basis back to our original one, so we add back the values which we originally subtracted. Below, I condensed all this into a couple one liners.
                 
                 <pre>
-                    public void mirrorRight(){
+                    public void mirrorRight(List&lt;Point&gt; points){
                         for(int i = 0; i&lt;points.length; i++){
                             int px = (int)((-(points[i].x - minx - (dim/2 - 0.5)))+ minx + dim/2 - 0.5);
                             int py = (int)((-(points[i].y - miny - (dim/2 - 0.5)))+ miny + dim/2 - 0.5);
